@@ -1,0 +1,6 @@
+datasets
+peft
+qwen-vl-utils
+torch
+transformers
+vllm
