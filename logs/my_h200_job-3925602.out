@@ -1,0 +1,24 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-04-2025 18:16:52
+Job ID:    3925602
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  my_h200_job
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0
+Running on host: atl1-1-03-017-9-0.pace.gatech.edu
+GPUs allocated:
+---------------------------------------
+Begin Slurm Epilog: Dec-04-2025 18:16:52
+Job ID:        3925602
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      my_h200_job
+Resources:     cpu=8,gres/gpu:h200=1,mem=64G,node=1
+Rsrc Used:     cput=00:00:00,vmem=0,walltime=00:00:00,mem=18744K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-9-0
+---------------------------------------

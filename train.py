@@ -13,9 +13,10 @@ from data import build_dataset
 from prompts import build_prompt
 from model import load_model, sample_group
 
-torch.manual_seed(42)
-random.seed(42)
-np.random.seed(42)
+seed = 44
+torch.manual_seed(seed)
+random.seed(seed)
+np.random.seed(seed)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -65,7 +66,7 @@ def grpo_update(batch_prompts, model, tokenizer, optimizer, group_size, beta, ep
     all_rewards: list[torch.Tensor] = []
     all_losses: list[torch.Tensor] = []
     collected_texts: list[str] = []
-    
+
     for _ in range(accum_steps):
         sequences, prompt_lens, rewards, texts = sample_group(model, tokenizer, batch_prompts, num_generations=group_size, do_sample=True)
 
@@ -86,7 +87,6 @@ def grpo_update(batch_prompts, model, tokenizer, optimizer, group_size, beta, ep
         all_losses.append(base_loss.detach())
         all_rewards.append(rewards.detach())
         collected_texts.extend(texts)
-        breakpoint()
 
     torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
     optimizer.step()
@@ -119,14 +119,14 @@ def evaluate_format_rate(model, tokenizer, dataset):
 
 
 def main():
-    train_ds, test_ds = time_it("build_dataset", build_dataset)
+    train_ds, test_ds = time_it("build_dataset", build_dataset, seed=seed)
     test_ds = test_ds.select(range(10))
     model, tokenizer = time_it("load_model", load_model)
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
     beta = 0.05
     epsilon = 0.2
-    group_size = 5
+    group_size = 10
 
     history = deque(maxlen=10)
     print("Baseline format adherence (pre-RL):")
@@ -135,7 +135,7 @@ def main():
 
     start_time = time.time()
     for step in range(25):
-        batch = train_ds.shuffle(seed=step).select(range(1))  # batch size n
+        batch = train_ds.shuffle(seed=step+seed).select(range(1))  # batch size n
         prompts_batch = build_prompt(tokenizer, [(ex["question"], ex["image"]) for ex in batch])
         answers = [ex["answer"] for ex in batch]
         stats = time_it("grpo_update", grpo_update, prompts_batch, model, tokenizer, optimizer, group_size, beta, epsilon, grad_accum=1)  # simulate batch size nx8

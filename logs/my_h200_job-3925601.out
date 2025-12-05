@@ -1,0 +1,44 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-04-2025 18:16:00
+Job ID:    3925601
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  my_h200_job
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0
+Running on host: atl1-1-03-017-9-0.pace.gatech.edu
+GPUs allocated:
+Thu Dec  4 18:16:00 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:E4:00.0 Off |                    0 |
+| N/A   31C    P0             78W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+---------------------------------------
+Begin Slurm Epilog: Dec-04-2025 18:16:00
+Job ID:        3925601
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      my_h200_job
+Resources:     cpu=8,gres/gpu:h200=1,mem=64G,node=1
+Rsrc Used:     cput=00:00:00,vmem=0,walltime=00:00:00,mem=19072K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-9-0
+---------------------------------------

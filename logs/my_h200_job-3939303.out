@@ -1,0 +1,107 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-05-2025 12:55:23
+Job ID:    3939303
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  my_h200_job
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0
+Running on host: atl1-1-03-017-9-0.pace.gatech.edu
+GPUs allocated:
+Fri Dec  5 12:55:23 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:9C:00.0 Off |                    0 |
+| N/A   41C    P0            131W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Imports: 5.1143 seconds
+build_dataset: 0.1555 seconds
+trainable params: 6,422,528 || all params: 2,133,954,560 || trainable%: 0.3010
+load_model: 7.3719 seconds
+Baseline format adherence (pre-RL):
+Format adherence: 0.0% with 10 samples
+evaluate_format_rate: 77.1819 seconds
+Baseline: 0.0 matches
+grpo_update: 69.5969 seconds
+Step 01 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=69.6s
+grpo_update: 70.6351 seconds
+Step 02 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=140.3s
+grpo_update: 68.4539 seconds
+Step 03 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=208.7s
+grpo_update: 69.1376 seconds
+Step 04 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=277.9s
+grpo_update: 70.2013 seconds
+Step 05 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=348.1s
+grpo_update: 69.0366 seconds
+Step 06 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=417.1s
+grpo_update: 68.9735 seconds
+Step 07 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=486.1s
+grpo_update: 68.4992 seconds
+Step 08 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=554.6s
+grpo_update: 69.1009 seconds
+Step 09 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=623.7s
+grpo_update: 69.4654 seconds
+Step 10 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=693.2s
+grpo_update: 69.4044 seconds
+Step 11 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=762.6s
+grpo_update: 68.8146 seconds
+Step 12 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=831.4s
+grpo_update: 69.5535 seconds
+Step 13 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=901.0s
+grpo_update: 70.6717 seconds
+Step 14 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=971.7s
+grpo_update: 69.2179 seconds
+Step 15 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1040.9s
+grpo_update: 69.6635 seconds
+Step 16 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1110.6s
+grpo_update: 70.9620 seconds
+Step 17 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1181.6s
+grpo_update: 69.2736 seconds
+Step 18 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1250.8s
+grpo_update: 68.6331 seconds
+Step 19 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1319.5s
+grpo_update: 68.8815 seconds
+Step 20 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1388.4s
+grpo_update: 69.4296 seconds
+Step 21 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1457.8s
+grpo_update: 45.1270 seconds
+Step 22 | reward_sum=10.000 | reward_mean=1.000 | format adherence=100.0% | time=1503.0s
+grpo_update: 76.9322 seconds
+Step 23 | reward_sum=8.000 | reward_mean=0.800 | format adherence=80.0% | time=1579.9s
+grpo_update: 120.0902 seconds
+Step 24 | reward_sum=3.000 | reward_mean=0.300 | format adherence=30.0% | time=1700.0s
+grpo_update: 68.3449 seconds
+Step 25 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1768.4s
+Format adherence after RL:
+Format adherence: 0.0% with 10 samples
+evaluate_format_rate: 75.1904 seconds
+Post-RL: 0.0 matches
+Saved model weights to model.pt
+---------------------------------------
+Begin Slurm Epilog: Dec-05-2025 13:27:44
+Job ID:        3939303
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      my_h200_job
+Resources:     cpu=8,gres/gpu:h200=1,mem=64G,node=1
+Rsrc Used:     cput=04:18:48,vmem=0,walltime=00:32:21,mem=4246180K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-9-0
+---------------------------------------
