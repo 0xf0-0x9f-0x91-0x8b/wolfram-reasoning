@@ -1,0 +1,10 @@
+,train,test,train_img,test_img
+(GradeSchool) Non-Geo Math,14774,21,1.26 ± 0.75,1.00 ± 0.00
+(GradeSchool) Geometric,10545,26,1.01 ± 0.14,1.04 ± 0.20
+Tables/Diagrams/Charts,5258,12,1.00 ± 0.03,1.00 ± 0.00
+(GradeSchool) Science,3137,3,1.00 ± 0.00,1.00 ± 0.00
+Spatial Reasoning,1865,6,1.02 ± 0.16,1.17 ± 0.41
+Broader STEM Topics,873,2,1.00 ± 0.00,1.00 ± 0.00
+Social Science,654,2,1.00 ± 0.00,1.00 ± 0.00
+Commonsense,51,0,1.00 ± 0.00,0.00 ± 0.00
+Overall,37157,72,1.11 ± 0.50,1.03 ± 0.17

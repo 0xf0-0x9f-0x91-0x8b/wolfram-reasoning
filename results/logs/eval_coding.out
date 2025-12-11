@@ -1,0 +1,66 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-10-2025 17:14:14
+Job ID:    3967397
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  eval_coding
+Partition: coe-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0,1,2,3
+Running on host: atl1-1-03-013-19-0.pace.gatech.edu
+GPUs allocated:
+Wed Dec 10 17:14:14 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:1A:00.0 Off |                    0 |
+| N/A   36C    P0             79W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H200                    On  |   00000000:40:00.0 Off |                    0 |
+| N/A   34C    P0             82W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA H200                    On  |   00000000:53:00.0 Off |                    0 |
+| N/A   32C    P0             77W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA H200                    On  |   00000000:66:00.0 Off |                    0 |
+| N/A   35C    P0             80W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Coding: True
+Train test split: 38481, 389
+[RUNTIME] build_dataset: 0.4271 seconds
+
+trainable params: 6,422,528 || all params: 2,133,954,560 || trainable%: 0.3010
+[RUNTIME] load_model: 28.6143 seconds
+
+[RUNTIME] GPU Usage:0.4%|0.7%|0.4%|1.7%
+
+Baseline format adherence (pre-RL):
+---------------------------------------
+Begin Slurm Epilog: Dec-10-2025 21:14:18
+Job ID:        3967397
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      eval_coding
+Resources:     cpu=4,gres/gpu:h200=4,mem=4G,node=1
+Rsrc Used:     cput=16:00:08,vmem=0,walltime=04:00:02,mem=4165180K,energy_used=0
+Partition:     coe-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-013-19-0
+---------------------------------------

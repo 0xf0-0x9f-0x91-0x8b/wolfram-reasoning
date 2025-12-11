@@ -1,0 +1,9 @@
+category,num_queries,accuracy,query_length,output_length
+(GradeSchool) Geometric,26,34.62,233.50 ± 152.02,3482.15 ± 1049.88
+(GradeSchool) Non-Geo Math,21,14.29,302.19 ± 295.17,3640.62 ± 934.52
+(GradeSchool) Science,3,0.0,408.33 ± 267.49,4096.00 ± 0.00
+Broader STEM Topics,2,50.0,514.00 ± 158.39,2904.50 ± 1685.04
+Social Science,2,0.0,444.00 ± 209.30,4096.00 ± 0.00
+Spatial Reasoning,6,16.67,434.50 ± 324.88,3398.67 ± 1570.33
+Tables/Diagrams/Charts,12,8.33,760.83 ± 1284.48,2097.92 ± 1823.11
+Overall,72,20.83,379.10 ± 577.74,3317.29 ± 1304.97

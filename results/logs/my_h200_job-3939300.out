@@ -1,0 +1,54 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-05-2025 12:50:21
+Job ID:    3939300
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  my_h200_job
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0
+Running on host: atl1-1-03-017-9-0.pace.gatech.edu
+GPUs allocated:
+Fri Dec  5 12:50:21 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:9C:00.0 Off |                    0 |
+| N/A   34C    P0             76W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Imports: 5.1268 seconds
+build_dataset: 0.1565 seconds
+trainable params: 6,422,528 || all params: 2,133,954,560 || trainable%: 0.3010
+load_model: 24.3969 seconds
+Baseline format adherence (pre-RL):
+Format adherence: 0.0% with 10 samples
+evaluate_format_rate: 92.3998 seconds
+Baseline: 0.0 matches
+grpo_update: 87.2783 seconds
+Step 01 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=87.3s
+---------------------------------------
+Begin Slurm Epilog: Dec-05-2025 12:55:22
+Job ID:        3939300
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      my_h200_job
+Resources:     cpu=8,gres/gpu:h200=1,mem=64G,node=1
+Rsrc Used:     cput=00:40:08,vmem=0,walltime=00:05:01,mem=4828116K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-9-0
+---------------------------------------

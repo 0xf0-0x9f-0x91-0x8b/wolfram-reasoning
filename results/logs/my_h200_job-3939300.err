@@ -1,0 +1,16 @@
+/home/hice1/kpalaniappan8/wolfram-reasoning/model.py:93: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/hice1/kpalaniappan8/wolfram-reasoning/train2.py:25: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Traceback (most recent call last):
+  File "/home/hice1/kpalaniappan8/wolfram-reasoning/train2.py", line 156, in <module>
+    main()
+  File "/home/hice1/kpalaniappan8/wolfram-reasoning/train2.py", line 140, in main
+    stats = time_it("grpo_update", grpo_update, prompts_batch, model, tokenizer, optimizer, group_size, beta, epsilon, grad_accum=1)  # simulate batch size nx8
+  File "/home/hice1/kpalaniappan8/wolfram-reasoning/utils.py", line 6, in time_it
+    result = func(*args, **kwargs)
+  File "/home/hice1/kpalaniappan8/wolfram-reasoning/train2.py", line 72, in grpo_update
+    logp_new = completion_log_probs(model, tokenizer, sequences, prompt_lens)
+  File "/home/hice1/kpalaniappan8/wolfram-reasoning/train2.py", line 29, in completion_log_probs
+    log_probs = torch.log_softmax(logits, dim=-1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.59 GiB. GPU 0 has a total capacity of 139.80 GiB of which 6.27 GiB is free. Including non-PyTorch memory, this process has 133.52 GiB memory in use. Of the allocated memory 111.49 GiB is allocated by PyTorch, and 21.30 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

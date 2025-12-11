@@ -1,0 +1,385 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-09-2025 02:18:45
+Job ID:    3962746
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  eval
+Partition: coe-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0,1,2,3
+Running on host: atl1-1-03-014-16-0.pace.gatech.edu
+GPUs allocated:
+Tue Dec  9 02:18:45 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:9B:00.0 Off |                    0 |
+| N/A   35C    P0             78W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H200                    On  |   00000000:BB:00.0 Off |                    0 |
+| N/A   31C    P0             75W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA H200                    On  |   00000000:CB:00.0 Off |                    0 |
+| N/A   34C    P0             80W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA H200                    On  |   00000000:DB:00.0 Off |                    0 |
+| N/A   30C    P0             75W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+---------------------------------------
+Begin Slurm Epilog: Dec-09-2025 02:19:02
+Job ID:        3962746
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      eval
+Resources:     cpu=4,gres/gpu:h200=4,mem=4G,node=1
+Rsrc Used:     cput=00:01:04,vmem=0,walltime=00:00:16,mem=77944K,energy_used=0
+Partition:     coe-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-014-16-0
+---------------------------------------
+[RUNTIME] build_prompt: 1.3778 seconds
+
+[RUNTIME] sample_group: 160.8054 seconds
+
+[RUNTIME] build_prompt: 0.2077 seconds
+
+[RUNTIME] sample_group: 91.9445 seconds
+
+[RUNTIME] build_prompt: 0.0570 seconds
+
+[RUNTIME] sample_group: 91.6696 seconds
+
+[RUNTIME] build_prompt: 0.1505 seconds
+
+[RUNTIME] sample_group: 125.7637 seconds
+
+[RUNTIME] build_prompt: 0.0861 seconds
+
+[RUNTIME] sample_group: 109.9917 seconds
+
+[RUNTIME] build_prompt: 0.0777 seconds
+
+[RUNTIME] sample_group: 113.4217 seconds
+
+[RUNTIME] build_prompt: 0.0458 seconds
+
+[RUNTIME] sample_group: 95.1959 seconds
+
+[RUNTIME] build_prompt: 0.0270 seconds
+
+[RUNTIME] sample_group: 83.8900 seconds
+
+[RUNTIME] build_prompt: 0.2635 seconds
+
+[RUNTIME] sample_group: 176.8244 seconds
+
+[RUNTIME] build_prompt: 0.0249 seconds
+
+[RUNTIME] sample_group: 87.7343 seconds
+
+[RUNTIME] build_prompt: 0.0486 seconds
+
+[RUNTIME] sample_group: 92.7308 seconds
+
+[RUNTIME] build_prompt: 0.0211 seconds
+
+[RUNTIME] sample_group: 84.9031 seconds
+
+[RUNTIME] build_prompt: 0.0417 seconds
+
+[RUNTIME] sample_group: 93.6342 seconds
+
+[RUNTIME] build_prompt: 0.0296 seconds
+
+[RUNTIME] sample_group: 89.0656 seconds
+
+[RUNTIME] build_prompt: 0.0555 seconds
+
+[RUNTIME] sample_group: 97.8820 seconds
+
+[RUNTIME] build_prompt: 0.0843 seconds
+
+[RUNTIME] sample_group: 123.1301 seconds
+
+[RUNTIME] build_prompt: 0.0614 seconds
+
+[RUNTIME] sample_group: 107.7365 seconds
+
+[RUNTIME] build_prompt: 0.0460 seconds
+
+[RUNTIME] sample_group: 90.6029 seconds
+
+[RUNTIME] build_prompt: 0.1412 seconds
+
+[RUNTIME] sample_group: 181.3129 seconds
+
+[RUNTIME] build_prompt: 0.1771 seconds
+
+[RUNTIME] sample_group: 165.9892 seconds
+
+[RUNTIME] build_prompt: 0.0346 seconds
+
+[RUNTIME] sample_group: 90.8156 seconds
+
+[RUNTIME] build_prompt: 0.0366 seconds
+
+[RUNTIME] sample_group: 93.9451 seconds
+
+[RUNTIME] build_prompt: 0.0408 seconds
+
+[RUNTIME] sample_group: 97.7104 seconds
+
+[RUNTIME] build_prompt: 0.0353 seconds
+
+[RUNTIME] sample_group: 93.5588 seconds
+
+[RUNTIME] build_prompt: 0.0821 seconds
+
+[RUNTIME] sample_group: 95.0944 seconds
+
+[RUNTIME] build_prompt: 0.0843 seconds
+
+[RUNTIME] sample_group: 103.7185 seconds
+
+[RUNTIME] build_prompt: 0.0745 seconds
+
+[RUNTIME] sample_group: 105.9964 seconds
+
+[RUNTIME] build_prompt: 0.1273 seconds
+
+[RUNTIME] sample_group: 124.4365 seconds
+
+[RUNTIME] build_prompt: 0.0457 seconds
+
+[RUNTIME] sample_group: 95.9206 seconds
+
+[RUNTIME] build_prompt: 0.0553 seconds
+
+[RUNTIME] sample_group: 83.6209 seconds
+
+[RUNTIME] build_prompt: 0.0543 seconds
+
+[RUNTIME] sample_group: 112.0866 seconds
+
+[RUNTIME] build_prompt: 0.0965 seconds
+
+[RUNTIME] sample_group: 151.8027 seconds
+
+[RUNTIME] build_prompt: 0.0544 seconds
+
+[RUNTIME] sample_group: 102.1773 seconds
+
+[RUNTIME] build_prompt: 0.0489 seconds
+
+[RUNTIME] sample_group: 97.7029 seconds
+
+[RUNTIME] build_prompt: 0.0827 seconds
+
+[RUNTIME] sample_group: 121.3355 seconds
+
+[RUNTIME] build_prompt: 0.1665 seconds
+
+[RUNTIME] sample_group: 168.1689 seconds
+
+[RUNTIME] build_prompt: 0.8167 seconds
+
+[RUNTIME] sample_group: 88.4351 seconds
+
+[RUNTIME] build_prompt: 0.3615 seconds
+
+[RUNTIME] sample_group: 103.4747 seconds
+
+[RUNTIME] build_prompt: 0.0774 seconds
+
+[RUNTIME] sample_group: 112.5833 seconds
+
+[RUNTIME] build_prompt: 0.0880 seconds
+
+[RUNTIME] sample_group: 93.1108 seconds
+
+[RUNTIME] build_prompt: 0.0373 seconds
+
+[RUNTIME] sample_group: 92.2637 seconds
+
+[RUNTIME] build_prompt: 0.0828 seconds
+
+[RUNTIME] sample_group: 147.0101 seconds
+
+[RUNTIME] build_prompt: 0.0311 seconds
+
+[RUNTIME] sample_group: 93.2738 seconds
+
+[RUNTIME] build_prompt: 0.0527 seconds
+
+[RUNTIME] sample_group: 110.2087 seconds
+
+[RUNTIME] build_prompt: 0.0741 seconds
+
+[RUNTIME] sample_group: 104.2736 seconds
+
+[RUNTIME] build_prompt: 0.0428 seconds
+
+[RUNTIME] sample_group: 100.8306 seconds
+
+[RUNTIME] build_prompt: 0.0440 seconds
+
+[RUNTIME] sample_group: 94.0779 seconds
+
+[RUNTIME] build_prompt: 0.0889 seconds
+
+[RUNTIME] sample_group: 133.1907 seconds
+
+[RUNTIME] build_prompt: 0.0710 seconds
+
+[RUNTIME] sample_group: 109.0291 seconds
+
+[RUNTIME] build_prompt: 0.1356 seconds
+
+[RUNTIME] sample_group: 144.5329 seconds
+
+[RUNTIME] build_prompt: 0.0296 seconds
+
+[RUNTIME] sample_group: 89.1237 seconds
+
+[RUNTIME] build_prompt: 0.2261 seconds
+
+[RUNTIME] sample_group: 88.4836 seconds
+
+[RUNTIME] build_prompt: 0.0986 seconds
+
+[RUNTIME] sample_group: 136.5333 seconds
+
+[RUNTIME] build_prompt: 0.3818 seconds
+
+[RUNTIME] sample_group: 95.0484 seconds
+
+[RUNTIME] build_prompt: 0.1404 seconds
+
+[RUNTIME] sample_group: 174.4741 seconds
+
+[RUNTIME] build_prompt: 0.0487 seconds
+
+[RUNTIME] sample_group: 82.1515 seconds
+
+[RUNTIME] build_prompt: 0.1055 seconds
+
+[RUNTIME] sample_group: 140.3656 seconds
+
+[RUNTIME] build_prompt: 0.4022 seconds
+
+[RUNTIME] sample_group: 146.0647 seconds
+
+[RUNTIME] build_prompt: 0.0472 seconds
+
+[RUNTIME] sample_group: 98.5547 seconds
+
+[RUNTIME] build_prompt: 0.0217 seconds
+
+[RUNTIME] sample_group: 83.6910 seconds
+
+[RUNTIME] build_prompt: 0.0324 seconds
+
+[RUNTIME] sample_group: 84.9596 seconds
+
+[RUNTIME] build_prompt: 0.0606 seconds
+
+[RUNTIME] sample_group: 84.9529 seconds
+
+[RUNTIME] build_prompt: 0.0929 seconds
+
+[RUNTIME] sample_group: 138.4574 seconds
+
+[RUNTIME] build_prompt: 0.0381 seconds
+
+[RUNTIME] sample_group: 96.8295 seconds
+
+[RUNTIME] build_prompt: 0.0353 seconds
+
+[RUNTIME] sample_group: 86.4845 seconds
+
+[RUNTIME] build_prompt: 0.3758 seconds
+
+[RUNTIME] sample_group: 92.6957 seconds
+
+[RUNTIME] build_prompt: 0.0297 seconds
+
+[RUNTIME] sample_group: 87.8458 seconds
+
+[RUNTIME] build_prompt: 0.0464 seconds
+
+[RUNTIME] sample_group: 101.6509 seconds
+
+[RUNTIME] build_prompt: 0.0514 seconds
+
+[RUNTIME] sample_group: 95.7960 seconds
+
+[RUNTIME] build_prompt: 0.0357 seconds
+
+[RUNTIME] sample_group: 92.4324 seconds
+
+[RUNTIME] build_prompt: 0.0747 seconds
+
+[RUNTIME] sample_group: 91.9763 seconds
+
+[RUNTIME] build_prompt: 0.0276 seconds
+
+[RUNTIME] sample_group: 82.9242 seconds
+
+[RUNTIME] build_prompt: 0.8160 seconds
+
+[RUNTIME] sample_group: 87.8823 seconds
+
+[RUNTIME] build_prompt: 0.0348 seconds
+
+[RUNTIME] sample_group: 85.1817 seconds
+
+[RUNTIME] build_prompt: 0.1211 seconds
+
+[RUNTIME] sample_group: 165.9514 seconds
+
+[RUNTIME] build_prompt: 0.0497 seconds
+
+[RUNTIME] sample_group: 88.7950 seconds
+
+[RUNTIME] build_prompt: 0.0336 seconds
+
+[RUNTIME] sample_group: 89.5298 seconds
+
+[RUNTIME] build_prompt: 0.0462 seconds
+
+[RUNTIME] sample_group: 98.6739 seconds
+
+
+Format adherence: 38.6% with 389 samples
+Baseline: 150.0 matches
+[RUNTIME] GPU Usage:80.4%|57.7%|0.4%|98.0%
+
+---------------------------------------
+Begin Slurm Epilog: Dec-09-2025 03:44:29
+Job ID:        3962692
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      eval
+Resources:     cpu=4,gres/gpu:h200=4,mem=4G,node=1
+Rsrc Used:     cput=09:35:16,vmem=0,walltime=02:23:49,mem=4167128K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-30-0
+---------------------------------------

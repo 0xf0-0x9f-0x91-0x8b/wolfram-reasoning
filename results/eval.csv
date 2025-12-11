@@ -1,0 +1,199 @@
+,predicted
+0,"f := Module[{},
+    s = 1;
+    i = 1;
+    k = 11;  (* Solve for k such that 1×2×...×(k-1) = 10! *)
+    (* For 10! = 1×2×...×10, we need the loop to run up to i=10 *)
+    (* The loop ends when i < k, and the last i is 10, so k must be 11 *)
+    k
+];"
+1,
+2,
+3,"f := Module[{},
+    {AB, BC, CD, AD} = {10, 7, 8};
+    Solve[AB + CD == BC + AD, AD]
+];"
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,"tags.
+
+So the correct code is:
+
+y = 0.5^5;
+
+But to compute that.
+
+Wait, but 0.5 is 1/2. So (1/2)^5 = 1/32.
+
+So in code, it's possible.
+
+So in Wolfram, the code would be:
+
+f := Module[{}, y = 0.5^5; y];
+
+But the problem states to use the code as in the examples.
+
+Alternatively, using exact fractions:
+
+y = (1/2)^5;
+
+But the answer is 1/32.
+
+So, the code would be:
+
+y = 0.5^5;
+
+Which computes 0.5^5 as 0.03125, but the exact fraction is 1/32.
+
+Thus, the answer is 1/32.
+
+Therefore, the code to compute it would be:
+
+y = 0.5^5;
+
+But the problem may expect the answer as 1/32.
+
+Wait, but in the problem statement, the examples use exact fractions. For example, in example 3, they have fractions.
+
+So, to compute 0.5^5, which is 1/32.
+
+So in the code, they'd write:
+
+y = (0.5)^5;
+
+But maybe in Wolfram, we can write it as:
+
+y = (1/2)^5;
+
+Which gives 1/32.
+
+But in the code, it's written as:
+
+y = 0.5^5;
+
+Which evaluates to the same.
+
+So the answer is 1/32.
+
+Therefore, the correct answer is 1/32.
+
+So, the code would be:
+
+y = 0.5^5;
+
+But to confirm:
+
+0.5^5 = (0.5)^5 = 0.5 * 0.5 = 0.25, *0.5=0.125, *0.5=0.0625, *0.5=0.03125.
+
+Which is 0.03125, equal to 1/32.
+
+Yes. So the answer is 1/32.
+
+Thus, the code is straightforward.
+</think>
+
+<wolfram>
+y = 0.5^5;
+y"
+12,"f := Module[{}, 
+    count = 4; 
+    count
+];"
+13,
+14,"f := Module[{},
+    cubes = {""brown"", ""gray""};  
+    Length[cubes]
+];"
+15,"f := Module[{},
+    choices = {""(A) appeal to nature: the assumption that natural things are always good"", 
+              ""(B) ad hominem: a personal attack against one's opponent""};
+    SelectFirst[choices, 
+        StringMatchQ[#, ""appeal to nature: ...""] & 
+    ]
+];"
+16,
+17,
+18,
+19,
+20,
+21,
+22,
+23,
+24,
+25,"f := Module[{
+    A = {0, 0, 0};
+    B = {2, 0, 0};
+    D = {0, 1, 0};
+    D1 = {0, 1, 2};
+    A1 = {0, 0, 2};
+    E = Midpoint[{D, D1}];
+    F = Midpoint[{A, B}];
+    G = Midpoint[{C, C1}];
+    C = {2, 1, 0};
+    C1 = {2, 1, 2};
+    A1E = E - A1;
+    GF = F - G;
+    dot = A1E • GF;
+    magnitudes = Abs[A1E] * Abs[GF];
+    cosine = dot / magnitudes;
+    cosine
+}];"
+26,
+27,
+28,
+29,
+30,
+31,"f := Module[{
+    xmean = (3 + 4 + 5 + 6)/4,
+    ymean = (2.5 + t + 4 + 4.5)/4,
+    expected_ymean
+}, 
+    expected_ymean = 0.7 * xmean + 0.35;
+    Solve[ymean == expected_ymean, t]
+];"
+32,
+33,
+34,"f := Module[{
+    L = 5;  (* Ladder length *)
+    d_initial = 3;  (* Initial horizontal distance from C *)
+    h_initial = Sqrt[L^2 - d_initial^2];  (* Initial vertical height *)
+    h_final = h_initial - 1;  (* New vertical height after sliding *)
+    d_final = Sqrt[L^2 - h_final^2];  (* New horizontal distance *)
+    horizontal_slide = d_final - d_initial
+}, horizontal_slide
+];"
+35,"f := Module[{},
+    r = 2;
+    angle = 90 Degree;
+    sectorArea = (angle/360) * Pi * r^2;
+    triangleArea = (r * r)/2;
+    segmentArea = sectorArea - triangleArea;
+    segmentArea
+];"
+36,"f := Module[{},
+    (* Define the angles of the four blades in a circular arrangement *)
+    angles = {0°, 90°, 180°, 270°};
+    (* Calculate the angle between consecutive blades (each separated by 90°) *)
+    anglesDifference = Differences[angles];
+    (* Ensure all differences are the same; the minimum rotation needed is 90° *)
+    anglesDifference[[1]] // Simplify
+];"
+37,
+38,
+39,
+40,"f := Module[{}, 
+    {BlackFriday2019, CyberMonday2019, BlackFriday2020, CyberMonday2020} = {43, 32, 41, 34};
+    BlackFriday = 43; CyberMonday = 32;
+    days = { ""Black Friday"" -> ""Friday"", ""Cyber Monday"" -> ""Monday"" };
+    days
+];"
+41,"f := Module[{}, 
+    kConstraint = k + 1 > 0;  (* k + 1 must be positive for parabola opening upwards *)
+    kConstraint
+];"
+42,

@@ -1,0 +1,257 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-05-2025 14:45:15
+Job ID:    3939977
+User ID:   kpalaniappan8
+Account:   ece
+Job name:  my_h200_job
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+CUDA_VISIBLE_DEVICES=0
+Running on host: atl1-1-03-017-9-0.pace.gatech.edu
+GPUs allocated:
+Fri Dec  5 14:45:15 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:9C:00.0 Off |                    0 |
+| N/A   34C    P0             76W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Imports: 42.3419 seconds
+build_dataset: 1.3987 seconds
+trainable params: 6,422,528 || all params: 2,133,954,560 || trainable%: 0.3010
+load_model: 24.0185 seconds
+Baseline format adherence (pre-RL):
+Format adherence: 80.0% with 10 samples
+evaluate_format_rate: 109.2468 seconds
+Baseline: 8.0 matches
+grpo_update: 73.9489 seconds
+Step 01 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=74.0s
+grpo_update: 69.2819 seconds
+Step 02 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=143.3s
+grpo_update: 69.4517 seconds
+Step 03 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=212.7s
+grpo_update: 70.3394 seconds
+Step 04 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=283.1s
+grpo_update: 69.2137 seconds
+Step 05 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=352.3s
+grpo_update: 69.1456 seconds
+Step 06 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=421.5s
+grpo_update: 70.0871 seconds
+Step 07 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=491.6s
+grpo_update: 69.5833 seconds
+Step 08 | reward_sum=2.000 | reward_mean=0.200 | format adherence=20.0% | time=561.2s
+grpo_update: 68.9647 seconds
+Step 09 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=630.2s
+grpo_update: 68.7223 seconds
+Step 10 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=698.9s
+grpo_update: 68.9437 seconds
+Step 11 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=767.8s
+grpo_update: 68.9429 seconds
+Step 12 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=836.8s
+grpo_update: 68.9657 seconds
+Step 13 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=905.8s
+grpo_update: 69.2211 seconds
+Step 14 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=975.0s
+grpo_update: 69.4841 seconds
+Step 15 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1044.5s
+grpo_update: 69.7280 seconds
+Step 16 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1114.2s
+grpo_update: 73.0316 seconds
+Step 17 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1187.3s
+grpo_update: 68.0790 seconds
+Step 18 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1255.4s
+grpo_update: 68.6929 seconds
+Step 19 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1324.1s
+grpo_update: 68.7746 seconds
+Step 20 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1392.9s
+grpo_update: 69.2746 seconds
+Step 21 | reward_sum=2.000 | reward_mean=0.200 | format adherence=20.0% | time=1462.2s
+grpo_update: 68.7445 seconds
+Step 22 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1530.9s
+grpo_update: 67.7318 seconds
+Step 23 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1598.7s
+grpo_update: 68.5215 seconds
+Step 24 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1667.2s
+grpo_update: 74.8705 seconds
+Step 25 | reward_sum=10.000 | reward_mean=1.000 | format adherence=100.0% | time=1742.1s
+grpo_update: 69.3081 seconds
+Step 26 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1811.5s
+grpo_update: 68.4828 seconds
+Step 27 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1880.5s
+grpo_update: 67.4190 seconds
+Step 28 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=1948.8s
+grpo_update: 67.9830 seconds
+Step 29 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2017.8s
+grpo_update: 77.0590 seconds
+Step 30 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2094.8s
+grpo_update: 70.4071 seconds
+Step 31 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2166.2s
+grpo_update: 68.2361 seconds
+Step 32 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2234.5s
+grpo_update: 67.1004 seconds
+Step 33 | reward_sum=3.000 | reward_mean=0.300 | format adherence=30.0% | time=2301.6s
+grpo_update: 67.8800 seconds
+Step 34 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2369.5s
+grpo_update: 67.8763 seconds
+Step 35 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2437.4s
+grpo_update: 68.2980 seconds
+Step 36 | reward_sum=2.000 | reward_mean=0.200 | format adherence=20.0% | time=2505.7s
+grpo_update: 67.9895 seconds
+Step 37 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2573.7s
+grpo_update: 67.7788 seconds
+Step 38 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2641.5s
+grpo_update: 76.7230 seconds
+Step 39 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2718.2s
+grpo_update: 68.5984 seconds
+Step 40 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2787.3s
+grpo_update: 67.2890 seconds
+Step 41 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2854.6s
+grpo_update: 70.3523 seconds
+Step 42 | reward_sum=1.000 | reward_mean=0.100 | format adherence=10.0% | time=2924.9s
+grpo_update: 68.1178 seconds
+Step 43 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=2993.1s
+grpo_update: 69.2733 seconds
+Step 44 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3062.4s
+grpo_update: 66.1514 seconds
+Step 45 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3128.5s
+grpo_update: 158.4393 seconds
+Step 46 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3287.0s
+grpo_update: 67.6681 seconds
+Step 47 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3354.7s
+grpo_update: 67.8635 seconds
+Step 48 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3422.6s
+grpo_update: 66.7007 seconds
+Step 49 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3489.3s
+grpo_update: 66.1589 seconds
+Step 50 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3555.4s
+grpo_update: 67.5827 seconds
+Step 51 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3623.0s
+grpo_update: 67.8026 seconds
+Step 52 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3690.8s
+grpo_update: 88.5537 seconds
+Step 53 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3779.5s
+grpo_update: 131.0493 seconds
+Step 54 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3910.6s
+grpo_update: 67.9356 seconds
+Step 55 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=3978.5s
+grpo_update: 67.9524 seconds
+Step 56 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4047.0s
+grpo_update: 67.6223 seconds
+Step 57 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4114.7s
+grpo_update: 136.5405 seconds
+Step 58 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4251.5s
+grpo_update: 67.5746 seconds
+Step 59 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4319.5s
+grpo_update: 123.9304 seconds
+Step 60 | reward_sum=5.000 | reward_mean=0.500 | format adherence=50.0% | time=4445.1s
+grpo_update: 68.1586 seconds
+Step 61 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4513.6s
+grpo_update: 68.4739 seconds
+Step 62 | reward_sum=1.000 | reward_mean=0.100 | format adherence=10.0% | time=4582.1s
+grpo_update: 128.8646 seconds
+Step 63 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4711.0s
+grpo_update: 70.5861 seconds
+Step 64 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4781.6s
+grpo_update: 68.3219 seconds
+Step 65 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4849.9s
+grpo_update: 68.0189 seconds
+Step 66 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4918.0s
+grpo_update: 67.4422 seconds
+Step 67 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=4985.4s
+grpo_update: 67.7666 seconds
+Step 68 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5053.2s
+grpo_update: 67.7504 seconds
+Step 69 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5121.0s
+grpo_update: 69.7227 seconds
+Step 70 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5190.7s
+grpo_update: 67.8447 seconds
+Step 71 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5258.6s
+grpo_update: 73.7944 seconds
+Step 72 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5332.4s
+grpo_update: 119.2415 seconds
+Step 73 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5451.6s
+grpo_update: 68.0907 seconds
+Step 74 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5519.7s
+grpo_update: 68.3282 seconds
+Step 75 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5588.1s
+grpo_update: 115.6268 seconds
+Step 76 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5703.7s
+grpo_update: 67.5749 seconds
+Step 77 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5771.4s
+grpo_update: 173.8001 seconds
+Step 78 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=5945.2s
+grpo_update: 69.9897 seconds
+Step 79 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6015.7s
+grpo_update: 68.6991 seconds
+Step 80 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6084.4s
+grpo_update: 67.3094 seconds
+Step 81 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6151.7s
+grpo_update: 67.9378 seconds
+Step 82 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6220.2s
+grpo_update: 128.3797 seconds
+Step 83 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6348.6s
+grpo_update: 122.8910 seconds
+Step 84 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6471.8s
+grpo_update: 68.2291 seconds
+Step 85 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6540.1s
+grpo_update: 146.3533 seconds
+Step 86 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6686.6s
+grpo_update: 83.0065 seconds
+Step 87 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6770.8s
+grpo_update: 68.1286 seconds
+Step 88 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=6839.3s
+grpo_update: 367.1054 seconds
+Step 89 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7206.4s
+grpo_update: 67.6463 seconds
+Step 90 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7274.2s
+grpo_update: 67.8871 seconds
+Step 91 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7342.1s
+grpo_update: 67.3738 seconds
+Step 92 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7409.5s
+grpo_update: 119.2555 seconds
+Step 93 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7528.7s
+grpo_update: 67.9675 seconds
+Step 94 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7596.7s
+grpo_update: 88.9086 seconds
+Step 95 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7685.6s
+grpo_update: 68.2126 seconds
+Step 96 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7753.9s
+grpo_update: 67.7217 seconds
+Step 97 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7821.6s
+grpo_update: 68.0992 seconds
+Step 98 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=7889.7s
+grpo_update: 133.1613 seconds
+Step 99 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=8022.9s
+grpo_update: 68.2296 seconds
+Step 100 | reward_sum=0.000 | reward_mean=0.000 | format adherence=0.0% | time=8091.1s
+Format adherence after RL:
+Format adherence: 80.0% with 10 samples
+evaluate_format_rate: 94.4824 seconds
+Post-RL: 8.0 matches
+Saved model weights to model2.pt
+---------------------------------------
+Begin Slurm Epilog: Dec-05-2025 17:06:41
+Job ID:        3939977
+User ID:       kpalaniappan8
+Account:       ece
+Job name:      my_h200_job
+Resources:     cpu=8,gres/gpu:h200=1,mem=64G,node=1
+Rsrc Used:     cput=18:51:28,vmem=0,walltime=02:21:26,mem=5705340K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-9-0
+---------------------------------------

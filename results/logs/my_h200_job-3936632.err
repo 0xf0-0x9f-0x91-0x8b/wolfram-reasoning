@@ -1,0 +1,6 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:07<00:28,  7.17s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:24<00:40, 13.38s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:55<00:42, 21.42s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:15<00:20, 20.80s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:18<00:00, 14.35s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:18<00:00, 15.73s/it]
+/home/hice1/kpalaniappan8/wolfram-reasoning/model.py:93: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/hice1/kpalaniappan8/wolfram-reasoning/train.py:25: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
