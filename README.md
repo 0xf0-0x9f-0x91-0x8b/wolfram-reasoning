@@ -11,6 +11,9 @@ I'm experimenting with a GRPO-based RL algorithm to incentivize representation a
 
 **Figure**: For each prompt, 10 output sequences from the model are explored, with advantages calculated amongst these outputs based on the reward model. LoRA (injected into each attention layer in the base model) is used for GRPO updates.
 
+## Training script
+https://github.com/karthikpalaniappan7/wolfram-reasoning/blob/main/src/train.py
+
 ## Dataset
 A subset of [🤗 ViRL39K](https://huggingface.co/datasets/TIGER-Lab/ViRL39K) introduced in [VL-Rethinker](https://neurips.cc/virtual/2025/loc/san-diego/poster/119918) paper (see results).
 
@@ -29,3 +32,4 @@ A subset of [🤗 ViRL39K](https://huggingface.co/datasets/TIGER-Lab/ViRL39K) in
 **Table**: Evaluation results with in-context learning and GRPO-based exploration and fine-tuning. Code column denotes fraction of outputs with Wolfram code. No Error column denotes fraction of
 outputs with error-free Wolfram code. Accuracy column denotes fraction of correct answers after deduction from Wolfram Engine. The prompt and
 output token lengths are averaged category-wise, with mean and std. dev. mentioned. Evaluation for rest of the 29 prompts are still running.
+
