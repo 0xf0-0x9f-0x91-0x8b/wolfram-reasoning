@@ -1,4 +1,4 @@
-# Incentivizing Wolfram-based reasoning of VLMs via reinforcement learning
+# Incentivizing Wolfram-based reasoning in VLMs via reinforcement learning
 I'm experimenting with a GRPO-based RL algorithm to incentivize representation and reasoning of visual math concepts, by the Qwen3-VL-2B-Thinking model, in Wolfram language. 
 
 ## Thinking in Wolfram
