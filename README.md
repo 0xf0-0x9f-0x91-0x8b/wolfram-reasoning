@@ -4,7 +4,7 @@ I'm experimenting with a GRPO-based RL algorithm to incentivize representation a
 ## Thinking in Wolfram
 <img width="1170" height="297" alt="image" src="https://github.com/user-attachments/assets/1ef96c5a-0be7-4d95-8601-b358e38c60dd" />
 
-**Figure**: Thinking math concepts with Wolfram Language and compiler Engine.
+**Figure**: Thinking math concepts with Wolfram Language and Engine.
 
 ## Overview of training methodology
 <img width="623" height="641" alt="image" src="https://github.com/user-attachments/assets/90736269-b7f9-4705-80eb-8c8ac055685f" />
