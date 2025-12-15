@@ -31,5 +31,5 @@ A subset of [🤗 ViRL39K](https://huggingface.co/datasets/TIGER-Lab/ViRL39K) in
 
 **Table**: Evaluation results with in-context learning and GRPO-based exploration and fine-tuning. Code column denotes fraction of outputs with Wolfram code. No Error column denotes fraction of
 outputs with error-free Wolfram code. Accuracy column denotes fraction of correct answers after deduction from Wolfram Engine. The prompt and
-output token lengths are averaged category-wise, with mean and std. dev. mentioned. Evaluation for rest of the 29 prompts are still running.
+output token lengths are averaged category-wise, with mean and std. dev. mentioned. 
 
