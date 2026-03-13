@@ -7,7 +7,7 @@ I'm experimenting with a GRPO-based RL algorithm to incentivize Wolfram-based re
 **Figure**: Thinking math concepts with Wolfram Language and Engine.
 
 ## Overview of training methodology
-<img width="627" height="575" alt="image" src="https://github.com/user-attachments/assets/e89c50c8-f728-4d04-a6da-3c1847dfeec9" />
+<img width="1170" height="297" alt="image" src="https://github.com/user-attachments/assets/1ef96c5a-0be7-4d95-8601-b358e38c60dd" />
 
 **Figure**: For each prompt, G = 10 output sequences from the model are explored, with advantages calculated amongst these outputs based on the reward model. LoRA (injected into each attention layer in the base model) is used for GRPO updates.
 
