@@ -2,12 +2,12 @@
 I'm experimenting with a GRPO-based RL algorithm to incentivize Wolfram-based representation and reasoning of visual math concepts by the Qwen3-VL-2B-Instruct model. The PoC has been implemented with 4x Nvidia H200 GPUs, with potential to improve accuracy via horizontal scaling. 
 
 ## Thinking in Wolfram
-<img width="671" height="562" alt="image" src="https://github.com/user-attachments/assets/f7cc8a11-fbe5-41f5-824c-b52591bdff7e" />
+<img width="1170" height="297" alt="image" src="https://github.com/user-attachments/assets/1ef96c5a-0be7-4d95-8601-b358e38c60dd" />
 
 **Figure**: Thinking math concepts with Wolfram Language and Engine.
 
 ## Overview of training methodology
-<img width="1170" height="297" alt="image" src="https://github.com/user-attachments/assets/1ef96c5a-0be7-4d95-8601-b358e38c60dd" />
+<img width="671" height="562" alt="image" src="https://github.com/user-attachments/assets/f7cc8a11-fbe5-41f5-824c-b52591bdff7e" />
 
 **Figure**: For each prompt, G = 10 output sequences from the model are explored, with advantages calculated amongst these outputs based on the reward model. LoRA (injected into each attention layer in the base model) is used for GRPO updates.
 
